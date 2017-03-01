@@ -12,13 +12,13 @@
 <link rel="canonical" href="http://data.shenhengheng.xyz/TensorFlow.html">
 
         <meta name="author" content="ShenHengheng" />
-        <meta name="description" content="张量（tensor): 张量有多种. 零阶张量为 纯量或标量 (scalar) 也就是一个数值. 比如 [1] 一阶张量为 向量 (vector), 比如 一维的 [1, 2, 3] 二阶张量为 矩阵 (matrix), 比如 二维的 [[1, 2, 3],[4, 5, 6],[7, 8, 9]] 以此类推, 还有 三阶 三维的 … 例子¶" />
+        <meta name="description" content="" />
 
         <meta property="og:site_name" content="Data" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Tensorflow Tutorial One"/>
         <meta property="og:url" content="http://data.shenhengheng.xyz/TensorFlow.html"/>
-        <meta property="og:description" content="张量（tensor): 张量有多种. 零阶张量为 纯量或标量 (scalar) 也就是一个数值. 比如 [1] 一阶张量为 向量 (vector), 比如 一维的 [1, 2, 3] 二阶张量为 矩阵 (matrix), 比如 二维的 [[1, 2, 3],[4, 5, 6],[7, 8, 9]] 以此类推, 还有 三阶 三维的 … 例子¶"/>
+        <meta property="og:description" content=""/>
         <meta property="article:published_time" content="2017-03-01" />
             <meta property="article:section" content="posts" />
             <meta property="article:author" content="ShenHengheng" />
@@ -1066,6 +1066,19 @@ h6:hover .anchor-link {
 
 .ansi-bold { font-weight: bold; }
 </style>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1092,19 +1105,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [1]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [1]:</div>
+<div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create data</span>
@@ -1142,17 +1143,17 @@ h6:hover .anchor-link {
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0 [-0.05644125] [ 0.48840028]
-20 [ 0.05852447] [ 0.32031882]
-40 [ 0.09142441] [ 0.30420119]
-60 [ 0.09822689] [ 0.30086866]
-80 [ 0.09963338] [ 0.30017963]
-100 [ 0.09992419] [ 0.30003715]
-120 [ 0.09998433] [ 0.3000077]
-140 [ 0.09999676] [ 0.30000159]
-160 [ 0.09999933] [ 0.30000034]
-180 [ 0.09999987] [ 0.30000007]
-200 [ 0.09999995] [ 0.30000004]
+<pre>0 [-0.20276856] [ 0.61824322]
+20 [ 0.02758517] [ 0.33765334]
+40 [ 0.08577309] [ 0.30739754]
+60 [ 0.09720492] [ 0.30145335]
+80 [ 0.09945086] [ 0.30028555]
+100 [ 0.09989211] [ 0.3000561]
+120 [ 0.09997881] [ 0.30001104]
+140 [ 0.09999584] [ 0.30000219]
+160 [ 0.09999919] [ 0.30000043]
+180 [ 0.09999985] [ 0.3000001]
+200 [ 0.09999991] [ 0.30000007]
 </pre>
 </div>
 </div>
@@ -1170,7 +1171,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [2]:</div>
+<div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># method1</span>
@@ -1203,7 +1204,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [3]:</div>
+<div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># method2</span>
@@ -1250,7 +1251,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [10]:</div>
+<div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 定义变量</span>
@@ -1281,7 +1282,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [13]:</div>
+<div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 凡是定义变量，就得initialize</span>
@@ -1337,7 +1338,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [15]:</div>
+<div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">input1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
@@ -1431,7 +1432,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [2]:</div>
+<div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1446,7 +1447,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [3]:</div>
+<div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create data</span>
@@ -1464,7 +1465,12 @@ h6:hover .anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>neural network structure:</p>
-<h1 id="layer:3">layer:3<a class="anchor-link" href="#layer:3">¶</a></h1><h1 id="input-layer:size(inputs-units)-&gt;1">input layer:size(inputs units)->1<a class="anchor-link" href="#input-layer:size(inputs-units)-&gt;1">¶</a></h1><h1 id="hidden-layer:10">hidden layer:10<a class="anchor-link" href="#hidden-layer:10">¶</a></h1><h1 id="ouput-layer:zise(output)-&gt;1">ouput layer:zise(output)->1<a class="anchor-link" href="#ouput-layer:zise(output)-&gt;1">¶</a></h1>
+<ol>
+<li>layer:3</li>
+<li>input layer:size(inputs units)->1</li>
+<li>hidden layer:10</li>
+<li>ouput layer:zise(output)->1</li>
+</ol>
 </div>
 </div>
 </div>
@@ -1483,7 +1489,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [9]:</div>
+<div class="prompt input_prompt">In [15]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># define hidden layer and output layer</span>
@@ -1518,26 +1524,26 @@ h6:hover .anchor-link {
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0.159579
-0.0133944
-0.010571
-0.00908032
-0.00816237
-0.00756977
-0.00703881
-0.00647997
-0.00590012
-0.00536164
-0.00488516
-0.00444773
-0.00401179
-0.0036185
-0.00334191
-0.00313321
-0.00299451
-0.00289436
-0.00281463
-0.00275421
+<pre>0.227839
+0.00875288
+0.00796278
+0.00759501
+0.00725931
+0.0069356
+0.00659806
+0.00626584
+0.00595027
+0.00557343
+0.00521737
+0.00489679
+0.00465749
+0.00447436
+0.00432607
+0.00419673
+0.00406988
+0.00395526
+0.00387377
+0.00381053
 </pre>
 </div>
 </div>
@@ -1555,11 +1561,11 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [4]:</div>
+<div class="prompt input_prompt">In [26]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># define hidden layer and output layer</span>
-<span class="o">%</span><span class="k">matplotlib</span> 
+<span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="n">xs</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span><span class="n">name</span><span class="o">=</span><span class="s1">'x_input'</span><span class="p">)</span>
 <span class="n">ys</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span><span class="n">name</span><span class="o">=</span><span class="s1">'y_input'</span><span class="p">)</span>
 
@@ -1594,13 +1600,12 @@ h6:hover .anchor-link {
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="k">pass</span>
             
-        <span class="c1"># print(sess.run(loss, feed_dict={xs:x_data,ys:y_data}))</span>
+<span class="c1">#         print(sess.run(loss, feed_dict={xs:x_data,ys:y_data}))</span>
         <span class="n">prediction_value</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span>
                                     <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="n">xs</span><span class="p">:</span><span class="n">x_data</span><span class="p">,</span><span class="n">ys</span><span class="p">:</span><span class="n">y_data</span><span class="p">})</span>
         <span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">prediction_value</span><span class="p">,</span><span class="s1">'r-'</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="c1">#         ax.lines.remove(lines[0])</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">pause</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
-
 
     
 </pre></div>
@@ -1611,26 +1616,254 @@ h6:hover .anchor-link {
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Using matplotlib backend: TkAgg
-</pre>
-</div>
-</div>
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold"><ipython-input-4-27ad8b16fc92></span> in <span class="ansi-cyan-fg"><module></span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-fg">      5</span> 
-<span class="ansi-green-fg">      6</span> <span class="ansi-red-intense-fg ansi-bold"># add hidden layer</span>
-<span class="ansi-green-intense-fg ansi-bold">----> 7</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>l1 <span class="ansi-yellow-intense-fg ansi-bold">=</span> add_layer<span class="ansi-yellow-intense-fg ansi-bold">(</span>xs<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">10</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> activation_function<span class="ansi-yellow-intense-fg ansi-bold">=</span>tf<span class="ansi-yellow-intense-fg ansi-bold">.</span>nn<span class="ansi-yellow-intense-fg ansi-bold">.</span>relu<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">      8</span> <span class="ansi-red-intense-fg ansi-bold"># add output layer</span>
-<span class="ansi-green-fg">      9</span> prediction <span class="ansi-yellow-intense-fg ansi-bold">=</span> add_layer<span class="ansi-yellow-intense-fg ansi-bold">(</span>l1<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">10</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> activation_function<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'add_layer' is not defined</pre>
-</div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+">
+</img></div>
 </div>
 </div>
 </div>
@@ -1753,7 +1986,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [6]:</div>
+<div class="prompt input_prompt">In [29]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tfdot</span> <span class="k">import</span> <span class="n">tfdot</span>
@@ -1764,545 +1997,18 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [10]:</div>
+<div class="prompt input_prompt">In [27]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tfdot</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print(tfdot())</span>
 </pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>// subgraph: 
-digraph root {
-label=""
-	// subgraph: layer
-	subgraph cluster_layer {
-	label="layer"
-		// subgraph: layer/Wx_plus_b
-		subgraph "cluster_layer/Wx_plus_b" {
-		label="layer/Wx_plus_b"
-			"layer/Wx_plus_b/MatMul" [label=MatMul fillcolor="#bbffbb" style=filled]
-			"layer/Wx_plus_b/add" [label=add fillcolor="#b3ecd8" style=filled]
-				"layer/Wx_plus_b/MatMul" -> "layer/Wx_plus_b/add"
-		}
-		// subgraph: layer/biases
-		subgraph "cluster_layer/biases" {
-		label="layer/biases"
-			// subgraph: layer/biases/add
-			subgraph "cluster_layer/biases/add" {
-			label="layer/biases/add"
-				"layer/biases/add/y" [label=y fillcolor=yellow style=filled]
-			}
-			// subgraph: layer/biases/b
-			subgraph "cluster_layer/biases/b" {
-			label="layer/biases/b"
-				"layer/biases/b/Assign" [label=Assign fillcolor="#bbbbff" style=filled]
-				"layer/biases/b/read" [label=read fillcolor="#c9bed4" style=filled]
-			}
-			"layer/biases/zeros" [label=zeros fillcolor=yellow style=filled]
-			"layer/biases/add" [label=add fillcolor="#b3ecd8" style=filled]
-			"layer/biases/b" [label=b fillcolor="#aec4e4" style=filled]
-				"layer/biases/b/Assign" -> "layer/biases/b" [color=red]
-				"layer/biases/b" -> "layer/biases/b/read"
-				"layer/biases/zeros" -> "layer/biases/add"
-				"layer/biases/add/y" -> "layer/biases/add"
-				"layer/biases/add" -> "layer/biases/b/Assign"
-		}
-		// subgraph: layer/weights
-		subgraph "cluster_layer/weights" {
-		label="layer/weights"
-			// subgraph: layer/weights/random_normal
-			subgraph "cluster_layer/weights/random_normal" {
-			label="layer/weights/random_normal"
-				"layer/weights/random_normal/shape" [label=shape fillcolor=yellow style=filled]
-				"layer/weights/random_normal/mean" [label=mean fillcolor=yellow style=filled]
-				"layer/weights/random_normal/stddev" [label=stddev fillcolor=yellow style=filled]
-				"layer/weights/random_normal/RandomStandardNormal" [label=RandomStandardNormal fillcolor="#a8c7a9" style=filled]
-				"layer/weights/random_normal/mul" [label=mul fillcolor="#d3dde7" style=filled]
-					"layer/weights/random_normal/shape" -> "layer/weights/random_normal/RandomStandardNormal"
-					"layer/weights/random_normal/RandomStandardNormal" -> "layer/weights/random_normal/mul"
-					"layer/weights/random_normal/stddev" -> "layer/weights/random_normal/mul"
-			}
-			// subgraph: layer/weights/W
-			subgraph "cluster_layer/weights/W" {
-			label="layer/weights/W"
-				"layer/weights/W/Assign" [label=Assign fillcolor="#bbbbff" style=filled]
-				"layer/weights/W/read" [label=read fillcolor="#c9bed4" style=filled]
-			}
-			"layer/weights/random_normal" [label=random_normal fillcolor="#b3ecd8" style=filled]
-			"layer/weights/W" [label=W fillcolor="#aec4e4" style=filled]
-				"layer/weights/W/Assign" -> "layer/weights/W" [color=red]
-				"layer/weights/W" -> "layer/weights/W/read"
-				"layer/weights/random_normal" -> "layer/weights/W/Assign"
-				"layer/weights/random_normal/mean" -> "layer/weights/random_normal"
-				"layer/weights/random_normal/mul" -> "layer/weights/random_normal"
-		}
-			"layer/weights/W/read" -> "layer/Wx_plus_b/MatMul"
-			"layer/biases/b/read" -> "layer/Wx_plus_b/add"
-	}
-	// subgraph: train
-	subgraph cluster_train {
-	label="train"
-		// subgraph: train/GradientDescent
-		subgraph "cluster_train/GradientDescent" {
-		label="train/GradientDescent"
-			// subgraph: train/GradientDescent/update_layer_1
-			subgraph "cluster_train/GradientDescent/update_layer_1" {
-			label="train/GradientDescent/update_layer_1"
-				// subgraph: train/GradientDescent/update_layer_1/biases
-				subgraph "cluster_train/GradientDescent/update_layer_1/biases" {
-				label="train/GradientDescent/update_layer_1/biases"
-					// subgraph: train/GradientDescent/update_layer_1/biases/b
-					subgraph "cluster_train/GradientDescent/update_layer_1/biases/b" {
-					label="train/GradientDescent/update_layer_1/biases/b"
-						"train/GradientDescent/update_layer_1/biases/b/ApplyGradientDescent" [label=ApplyGradientDescent fillcolor="#eb9db7" style=filled]
-					}
-				}
-				// subgraph: train/GradientDescent/update_layer_1/weights
-				subgraph "cluster_train/GradientDescent/update_layer_1/weights" {
-				label="train/GradientDescent/update_layer_1/weights"
-					// subgraph: train/GradientDescent/update_layer_1/weights/W
-					subgraph "cluster_train/GradientDescent/update_layer_1/weights/W" {
-					label="train/GradientDescent/update_layer_1/weights/W"
-						"train/GradientDescent/update_layer_1/weights/W/ApplyGradientDescent" [label=ApplyGradientDescent fillcolor="#eb9db7" style=filled]
-					}
-				}
-			}
-			// subgraph: train/GradientDescent/update_layer
-			subgraph "cluster_train/GradientDescent/update_layer" {
-			label="train/GradientDescent/update_layer"
-				// subgraph: train/GradientDescent/update_layer/weights
-				subgraph "cluster_train/GradientDescent/update_layer/weights" {
-				label="train/GradientDescent/update_layer/weights"
-					// subgraph: train/GradientDescent/update_layer/weights/W
-					subgraph "cluster_train/GradientDescent/update_layer/weights/W" {
-					label="train/GradientDescent/update_layer/weights/W"
-						"train/GradientDescent/update_layer/weights/W/ApplyGradientDescent" [label=ApplyGradientDescent fillcolor="#eb9db7" style=filled]
-					}
-				}
-				// subgraph: train/GradientDescent/update_layer/biases
-				subgraph "cluster_train/GradientDescent/update_layer/biases" {
-				label="train/GradientDescent/update_layer/biases"
-					// subgraph: train/GradientDescent/update_layer/biases/b
-					subgraph "cluster_train/GradientDescent/update_layer/biases/b" {
-					label="train/GradientDescent/update_layer/biases/b"
-						"train/GradientDescent/update_layer/biases/b/ApplyGradientDescent" [label=ApplyGradientDescent fillcolor="#eb9db7" style=filled]
-					}
-				}
-			}
-			"train/GradientDescent/learning_rate" [label=learning_rate fillcolor=yellow style=filled]
-				"train/GradientDescent/learning_rate" -> "train/GradientDescent/update_layer/biases/b/ApplyGradientDescent"
-				"train/GradientDescent/learning_rate" -> "train/GradientDescent/update_layer_1/biases/b/ApplyGradientDescent"
-				"train/GradientDescent/learning_rate" -> "train/GradientDescent/update_layer/weights/W/ApplyGradientDescent"
-				"train/GradientDescent/learning_rate" -> "train/GradientDescent/update_layer_1/weights/W/ApplyGradientDescent"
-		}
-		// subgraph: train/gradients
-		subgraph "cluster_train/gradients" {
-		label="train/gradients"
-			// subgraph: train/gradients/layer
-			subgraph "cluster_train/gradients/layer" {
-			label="train/gradients/layer"
-				// subgraph: train/gradients/layer/Wx_plus_b
-				subgraph "cluster_train/gradients/layer/Wx_plus_b" {
-				label="train/gradients/layer/Wx_plus_b"
-					// subgraph: train/gradients/layer/Wx_plus_b/add_grad
-					subgraph "cluster_train/gradients/layer/Wx_plus_b/add_grad" {
-					label="train/gradients/layer/Wx_plus_b/add_grad"
-						// subgraph: train/gradients/layer/Wx_plus_b/add_grad/tuple
-						subgraph "cluster_train/gradients/layer/Wx_plus_b/add_grad/tuple" {
-						label="train/gradients/layer/Wx_plus_b/add_grad/tuple"
-							"train/gradients/layer/Wx_plus_b/add_grad/tuple/group_deps" [label=group_deps fillcolor="#dbcbdc" style=filled]
-							"train/gradients/layer/Wx_plus_b/add_grad/tuple/control_dependency" [label=control_dependency fillcolor="#c9bed4" style=filled]
-							"train/gradients/layer/Wx_plus_b/add_grad/tuple/control_dependency_1" [label=control_dependency_1 fillcolor="#c9bed4" style=filled]
-						}
-						"train/gradients/layer/Wx_plus_b/add_grad/Shape" [label=Shape fillcolor="#dec7a2" style=filled]
-						"train/gradients/layer/Wx_plus_b/add_grad/Shape_1" [label=Shape_1 fillcolor=yellow style=filled]
-						"train/gradients/layer/Wx_plus_b/add_grad/BroadcastGradientArgs" [label=BroadcastGradientArgs fillcolor="#cdfbc9" style=filled]
-						"train/gradients/layer/Wx_plus_b/add_grad/Sum" [label=Sum fillcolor="#dbcba4" style=filled]
-						"train/gradients/layer/Wx_plus_b/add_grad/Reshape" [label=Reshape fillcolor="#e8f5f6" style=filled]
-						"train/gradients/layer/Wx_plus_b/add_grad/Sum_1" [label=Sum_1 fillcolor="#dbcba4" style=filled]
-						"train/gradients/layer/Wx_plus_b/add_grad/Reshape_1" [label=Reshape_1 fillcolor="#e8f5f6" style=filled]
-							"train/gradients/layer/Wx_plus_b/add_grad/Sum_1" -> "train/gradients/layer/Wx_plus_b/add_grad/Reshape_1"
-							"train/gradients/layer/Wx_plus_b/add_grad/BroadcastGradientArgs" -> "train/gradients/layer/Wx_plus_b/add_grad/Sum_1"
-							"train/gradients/layer/Wx_plus_b/add_grad/Shape_1" -> "train/gradients/layer/Wx_plus_b/add_grad/Reshape_1"
-							"train/gradients/layer/Wx_plus_b/add_grad/Shape" -> "train/gradients/layer/Wx_plus_b/add_grad/BroadcastGradientArgs"
-							"train/gradients/layer/Wx_plus_b/add_grad/Sum" -> "train/gradients/layer/Wx_plus_b/add_grad/Reshape"
-							"train/gradients/layer/Wx_plus_b/add_grad/BroadcastGradientArgs" -> "train/gradients/layer/Wx_plus_b/add_grad/Sum"
-							"train/gradients/layer/Wx_plus_b/add_grad/Shape" -> "train/gradients/layer/Wx_plus_b/add_grad/Reshape"
-							"train/gradients/layer/Wx_plus_b/add_grad/Reshape_1" -> "train/gradients/layer/Wx_plus_b/add_grad/tuple/control_dependency_1"
-							"train/gradients/layer/Wx_plus_b/add_grad/Shape_1" -> "train/gradients/layer/Wx_plus_b/add_grad/BroadcastGradientArgs"
-							"train/gradients/layer/Wx_plus_b/add_grad/Reshape" -> "train/gradients/layer/Wx_plus_b/add_grad/tuple/control_dependency"
-					}
-					// subgraph: train/gradients/layer/Wx_plus_b/MatMul_grad
-					subgraph "cluster_train/gradients/layer/Wx_plus_b/MatMul_grad" {
-					label="train/gradients/layer/Wx_plus_b/MatMul_grad"
-						// subgraph: train/gradients/layer/Wx_plus_b/MatMul_grad/tuple
-						subgraph "cluster_train/gradients/layer/Wx_plus_b/MatMul_grad/tuple" {
-						label="train/gradients/layer/Wx_plus_b/MatMul_grad/tuple"
-							"train/gradients/layer/Wx_plus_b/MatMul_grad/tuple/group_deps" [label=group_deps fillcolor="#dbcbdc" style=filled]
-							"train/gradients/layer/Wx_plus_b/MatMul_grad/tuple/control_dependency" [label=control_dependency fillcolor="#c9bed4" style=filled]
-							"train/gradients/layer/Wx_plus_b/MatMul_grad/tuple/control_dependency_1" [label=control_dependency_1 fillcolor="#c9bed4" style=filled]
-						}
-						"train/gradients/layer/Wx_plus_b/MatMul_grad/MatMul" [label=MatMul fillcolor="#bbffbb" style=filled]
-						"train/gradients/layer/Wx_plus_b/MatMul_grad/MatMul_1" [label=MatMul_1 fillcolor="#bbffbb" style=filled]
-							"train/gradients/layer/Wx_plus_b/MatMul_grad/MatMul" -> "train/gradients/layer/Wx_plus_b/MatMul_grad/tuple/control_dependency"
-							"train/gradients/layer/Wx_plus_b/MatMul_grad/MatMul_1" -> "train/gradients/layer/Wx_plus_b/MatMul_grad/tuple/control_dependency_1"
-					}
-						"train/gradients/layer/Wx_plus_b/add_grad/tuple/control_dependency" -> "train/gradients/layer/Wx_plus_b/MatMul_grad/MatMul"
-						"train/gradients/layer/Wx_plus_b/add_grad/tuple/control_dependency" -> "train/gradients/layer/Wx_plus_b/MatMul_grad/MatMul_1"
-				}
-			}
-			// subgraph: train/gradients/Relu_grad
-			subgraph "cluster_train/gradients/Relu_grad" {
-			label="train/gradients/Relu_grad"
-				"train/gradients/Relu_grad/ReluGrad" [label=ReluGrad fillcolor="#b99ee3" style=filled]
-			}
-			// subgraph: train/gradients/loss
-			subgraph "cluster_train/gradients/loss" {
-			label="train/gradients/loss"
-				// subgraph: train/gradients/loss/Square_grad
-				subgraph "cluster_train/gradients/loss/Square_grad" {
-				label="train/gradients/loss/Square_grad"
-					// subgraph: train/gradients/loss/Square_grad/mul
-					subgraph "cluster_train/gradients/loss/Square_grad/mul" {
-					label="train/gradients/loss/Square_grad/mul"
-						"train/gradients/loss/Square_grad/mul/x" [label=x fillcolor=yellow style=filled]
-					}
-					"train/gradients/loss/Square_grad/mul" [label=mul fillcolor="#d3dde7" style=filled]
-					"train/gradients/loss/Square_grad/mul_1" [label=mul_1 fillcolor="#d3dde7" style=filled]
-						"train/gradients/loss/Square_grad/mul/x" -> "train/gradients/loss/Square_grad/mul"
-						"train/gradients/loss/Square_grad/mul" -> "train/gradients/loss/Square_grad/mul_1"
-				}
-				// subgraph: train/gradients/loss/Mean_grad
-				subgraph "cluster_train/gradients/loss/Mean_grad" {
-				label="train/gradients/loss/Mean_grad"
-					// subgraph: train/gradients/loss/Mean_grad/Maximum
-					subgraph "cluster_train/gradients/loss/Mean_grad/Maximum" {
-					label="train/gradients/loss/Mean_grad/Maximum"
-						"train/gradients/loss/Mean_grad/Maximum/y" [label=y fillcolor=yellow style=filled]
-					}
-					// subgraph: train/gradients/loss/Mean_grad/Reshape
-					subgraph "cluster_train/gradients/loss/Mean_grad/Reshape" {
-					label="train/gradients/loss/Mean_grad/Reshape"
-						"train/gradients/loss/Mean_grad/Reshape/shape" [label=shape fillcolor=yellow style=filled]
-					}
-					"train/gradients/loss/Mean_grad/Reshape" [label=Reshape fillcolor="#e8f5f6" style=filled]
-					"train/gradients/loss/Mean_grad/Shape" [label=Shape fillcolor="#dec7a2" style=filled]
-					"train/gradients/loss/Mean_grad/Tile" [label=Tile fillcolor="#acafa4" style=filled]
-					"train/gradients/loss/Mean_grad/Shape_1" [label=Shape_1 fillcolor="#dec7a2" style=filled]
-					"train/gradients/loss/Mean_grad/Shape_2" [label=Shape_2 fillcolor=yellow style=filled]
-					"train/gradients/loss/Mean_grad/Const" [label=Const fillcolor=yellow style=filled]
-					"train/gradients/loss/Mean_grad/Prod" [label=Prod fillcolor="#f4ecd2" style=filled]
-					"train/gradients/loss/Mean_grad/Const_1" [label=Const_1 fillcolor=yellow style=filled]
-					"train/gradients/loss/Mean_grad/Prod_1" [label=Prod_1 fillcolor="#f4ecd2" style=filled]
-					"train/gradients/loss/Mean_grad/Maximum" [label=Maximum fillcolor="#d1d0c8" style=filled]
-					"train/gradients/loss/Mean_grad/floordiv" [label=floordiv fillcolor="#f6e0f6" style=filled]
-					"train/gradients/loss/Mean_grad/Cast" [label=Cast fillcolor="#dbfaa2" style=filled]
-					"train/gradients/loss/Mean_grad/truediv" [label=truediv fillcolor="#9cc2ee" style=filled]
-						"train/gradients/loss/Mean_grad/Maximum" -> "train/gradients/loss/Mean_grad/floordiv"
-						"train/gradients/loss/Mean_grad/Cast" -> "train/gradients/loss/Mean_grad/truediv"
-						"train/gradients/loss/Mean_grad/Prod" -> "train/gradients/loss/Mean_grad/floordiv"
-						"train/gradients/loss/Mean_grad/floordiv" -> "train/gradients/loss/Mean_grad/Cast"
-						"train/gradients/loss/Mean_grad/Prod_1" -> "train/gradients/loss/Mean_grad/Maximum"
-						"train/gradients/loss/Mean_grad/Tile" -> "train/gradients/loss/Mean_grad/truediv"
-						"train/gradients/loss/Mean_grad/Shape_2" -> "train/gradients/loss/Mean_grad/Prod_1"
-						"train/gradients/loss/Mean_grad/Shape" -> "train/gradients/loss/Mean_grad/Tile"
-						"train/gradients/loss/Mean_grad/Reshape/shape" -> "train/gradients/loss/Mean_grad/Reshape"
-						"train/gradients/loss/Mean_grad/Const" -> "train/gradients/loss/Mean_grad/Prod"
-						"train/gradients/loss/Mean_grad/Const_1" -> "train/gradients/loss/Mean_grad/Prod_1"
-						"train/gradients/loss/Mean_grad/Shape_1" -> "train/gradients/loss/Mean_grad/Prod"
-						"train/gradients/loss/Mean_grad/Maximum/y" -> "train/gradients/loss/Mean_grad/Maximum"
-						"train/gradients/loss/Mean_grad/Reshape" -> "train/gradients/loss/Mean_grad/Tile"
-				}
-				// subgraph: train/gradients/loss/Sum_grad
-				subgraph "cluster_train/gradients/loss/Sum_grad" {
-				label="train/gradients/loss/Sum_grad"
-					// subgraph: train/gradients/loss/Sum_grad/range
-					subgraph "cluster_train/gradients/loss/Sum_grad/range" {
-					label="train/gradients/loss/Sum_grad/range"
-						"train/gradients/loss/Sum_grad/range/start" [label=start fillcolor=yellow style=filled]
-						"train/gradients/loss/Sum_grad/range/delta" [label=delta fillcolor=yellow style=filled]
-					}
-					// subgraph: train/gradients/loss/Sum_grad/Fill
-					subgraph "cluster_train/gradients/loss/Sum_grad/Fill" {
-					label="train/gradients/loss/Sum_grad/Fill"
-						"train/gradients/loss/Sum_grad/Fill/value" [label=value fillcolor=yellow style=filled]
-					}
-					// subgraph: train/gradients/loss/Sum_grad/Maximum
-					subgraph "cluster_train/gradients/loss/Sum_grad/Maximum" {
-					label="train/gradients/loss/Sum_grad/Maximum"
-						"train/gradients/loss/Sum_grad/Maximum/y" [label=y fillcolor=yellow style=filled]
-					}
-					"train/gradients/loss/Sum_grad/Shape" [label=Shape fillcolor="#dec7a2" style=filled]
-					"train/gradients/loss/Sum_grad/Size" [label=Size fillcolor=yellow style=filled]
-					"train/gradients/loss/Sum_grad/add" [label=add fillcolor="#b3ecd8" style=filled]
-					"train/gradients/loss/Sum_grad/mod" [label=mod fillcolor="#edd6e5" style=filled]
-					"train/gradients/loss/Sum_grad/Shape_1" [label=Shape_1 fillcolor=yellow style=filled]
-					"train/gradients/loss/Sum_grad/range" [label=range fillcolor="#a1bce8" style=filled]
-					"train/gradients/loss/Sum_grad/Fill" [label=Fill fillcolor="#fca2b3" style=filled]
-					"train/gradients/loss/Sum_grad/DynamicStitch" [label=DynamicStitch fillcolor="#bde6f7" style=filled]
-					"train/gradients/loss/Sum_grad/Maximum" [label=Maximum fillcolor="#d1d0c8" style=filled]
-					"train/gradients/loss/Sum_grad/floordiv" [label=floordiv fillcolor="#f6e0f6" style=filled]
-					"train/gradients/loss/Sum_grad/Reshape" [label=Reshape fillcolor="#e8f5f6" style=filled]
-					"train/gradients/loss/Sum_grad/Tile" [label=Tile fillcolor="#acafa4" style=filled]
-						"train/gradients/loss/Sum_grad/range" -> "train/gradients/loss/Sum_grad/DynamicStitch"
-						"train/gradients/loss/Sum_grad/Maximum" -> "train/gradients/loss/Sum_grad/floordiv"
-						"train/gradients/loss/Sum_grad/DynamicStitch" -> "train/gradients/loss/Sum_grad/Reshape"
-						"train/gradients/loss/Sum_grad/add" -> "train/gradients/loss/Sum_grad/mod"
-						"train/gradients/loss/Sum_grad/Shape" -> "train/gradients/loss/Sum_grad/DynamicStitch"
-						"train/gradients/loss/Sum_grad/floordiv" -> "train/gradients/loss/Sum_grad/Tile"
-						"train/gradients/loss/Sum_grad/DynamicStitch" -> "train/gradients/loss/Sum_grad/Maximum"
-						"train/gradients/loss/Sum_grad/Fill/value" -> "train/gradients/loss/Sum_grad/Fill"
-						"train/gradients/loss/Sum_grad/Size" -> "train/gradients/loss/Sum_grad/add"
-						"train/gradients/loss/Sum_grad/Shape_1" -> "train/gradients/loss/Sum_grad/Fill"
-						"train/gradients/loss/Sum_grad/Maximum/y" -> "train/gradients/loss/Sum_grad/Maximum"
-						"train/gradients/loss/Sum_grad/Shape" -> "train/gradients/loss/Sum_grad/floordiv"
-						"train/gradients/loss/Sum_grad/mod" -> "train/gradients/loss/Sum_grad/DynamicStitch"
-						"train/gradients/loss/Sum_grad/Size" -> "train/gradients/loss/Sum_grad/mod"
-						"train/gradients/loss/Sum_grad/Reshape" -> "train/gradients/loss/Sum_grad/Tile"
-						"train/gradients/loss/Sum_grad/Size" -> "train/gradients/loss/Sum_grad/range"
-						"train/gradients/loss/Sum_grad/range/start" -> "train/gradients/loss/Sum_grad/range"
-						"train/gradients/loss/Sum_grad/Fill" -> "train/gradients/loss/Sum_grad/DynamicStitch"
-						"train/gradients/loss/Sum_grad/range/delta" -> "train/gradients/loss/Sum_grad/range"
-				}
-				// subgraph: train/gradients/loss/sub_grad
-				subgraph "cluster_train/gradients/loss/sub_grad" {
-				label="train/gradients/loss/sub_grad"
-					// subgraph: train/gradients/loss/sub_grad/tuple
-					subgraph "cluster_train/gradients/loss/sub_grad/tuple" {
-					label="train/gradients/loss/sub_grad/tuple"
-						"train/gradients/loss/sub_grad/tuple/group_deps" [label=group_deps fillcolor="#dbcbdc" style=filled]
-						"train/gradients/loss/sub_grad/tuple/control_dependency" [label=control_dependency fillcolor="#c9bed4" style=filled]
-						"train/gradients/loss/sub_grad/tuple/control_dependency_1" [label=control_dependency_1 fillcolor="#c9bed4" style=filled]
-					}
-					"train/gradients/loss/sub_grad/Shape" [label=Shape fillcolor="#dec7a2" style=filled]
-					"train/gradients/loss/sub_grad/Shape_1" [label=Shape_1 fillcolor="#dec7a2" style=filled]
-					"train/gradients/loss/sub_grad/BroadcastGradientArgs" [label=BroadcastGradientArgs fillcolor="#cdfbc9" style=filled]
-					"train/gradients/loss/sub_grad/Sum" [label=Sum fillcolor="#dbcba4" style=filled]
-					"train/gradients/loss/sub_grad/Reshape" [label=Reshape fillcolor="#e8f5f6" style=filled]
-					"train/gradients/loss/sub_grad/Sum_1" [label=Sum_1 fillcolor="#dbcba4" style=filled]
-					"train/gradients/loss/sub_grad/Neg" [label=Neg fillcolor="#9fddb9" style=filled]
-					"train/gradients/loss/sub_grad/Reshape_1" [label=Reshape_1 fillcolor="#e8f5f6" style=filled]
-						"train/gradients/loss/sub_grad/Sum_1" -> "train/gradients/loss/sub_grad/Neg"
-						"train/gradients/loss/sub_grad/Shape_1" -> "train/gradients/loss/sub_grad/Reshape_1"
-						"train/gradients/loss/sub_grad/Reshape_1" -> "train/gradients/loss/sub_grad/tuple/control_dependency_1"
-						"train/gradients/loss/sub_grad/Shape" -> "train/gradients/loss/sub_grad/Reshape"
-						"train/gradients/loss/sub_grad/BroadcastGradientArgs" -> "train/gradients/loss/sub_grad/Sum"
-						"train/gradients/loss/sub_grad/Neg" -> "train/gradients/loss/sub_grad/Reshape_1"
-						"train/gradients/loss/sub_grad/Sum" -> "train/gradients/loss/sub_grad/Reshape"
-						"train/gradients/loss/sub_grad/Reshape" -> "train/gradients/loss/sub_grad/tuple/control_dependency"
-						"train/gradients/loss/sub_grad/Shape" -> "train/gradients/loss/sub_grad/BroadcastGradientArgs"
-						"train/gradients/loss/sub_grad/Shape_1" -> "train/gradients/loss/sub_grad/BroadcastGradientArgs"
-						"train/gradients/loss/sub_grad/BroadcastGradientArgs" -> "train/gradients/loss/sub_grad/Sum_1"
-				}
-					"train/gradients/loss/Square_grad/mul_1" -> "train/gradients/loss/sub_grad/Sum_1"
-					"train/gradients/loss/Mean_grad/truediv" -> "train/gradients/loss/Sum_grad/Reshape"
-					"train/gradients/loss/Sum_grad/Tile" -> "train/gradients/loss/Square_grad/mul_1"
-					"train/gradients/loss/Square_grad/mul_1" -> "train/gradients/loss/sub_grad/Sum"
-			}
-			// subgraph: train/gradients/layer_1
-			subgraph "cluster_train/gradients/layer_1" {
-			label="train/gradients/layer_1"
-				// subgraph: train/gradients/layer_1/Wx_plus_b
-				subgraph "cluster_train/gradients/layer_1/Wx_plus_b" {
-				label="train/gradients/layer_1/Wx_plus_b"
-					// subgraph: train/gradients/layer_1/Wx_plus_b/add_grad
-					subgraph "cluster_train/gradients/layer_1/Wx_plus_b/add_grad" {
-					label="train/gradients/layer_1/Wx_plus_b/add_grad"
-						// subgraph: train/gradients/layer_1/Wx_plus_b/add_grad/tuple
-						subgraph "cluster_train/gradients/layer_1/Wx_plus_b/add_grad/tuple" {
-						label="train/gradients/layer_1/Wx_plus_b/add_grad/tuple"
-							"train/gradients/layer_1/Wx_plus_b/add_grad/tuple/group_deps" [label=group_deps fillcolor="#dbcbdc" style=filled]
-							"train/gradients/layer_1/Wx_plus_b/add_grad/tuple/control_dependency" [label=control_dependency fillcolor="#c9bed4" style=filled]
-							"train/gradients/layer_1/Wx_plus_b/add_grad/tuple/control_dependency_1" [label=control_dependency_1 fillcolor="#c9bed4" style=filled]
-						}
-						"train/gradients/layer_1/Wx_plus_b/add_grad/Shape" [label=Shape fillcolor="#dec7a2" style=filled]
-						"train/gradients/layer_1/Wx_plus_b/add_grad/Shape_1" [label=Shape_1 fillcolor=yellow style=filled]
-						"train/gradients/layer_1/Wx_plus_b/add_grad/BroadcastGradientArgs" [label=BroadcastGradientArgs fillcolor="#cdfbc9" style=filled]
-						"train/gradients/layer_1/Wx_plus_b/add_grad/Sum" [label=Sum fillcolor="#dbcba4" style=filled]
-						"train/gradients/layer_1/Wx_plus_b/add_grad/Reshape" [label=Reshape fillcolor="#e8f5f6" style=filled]
-						"train/gradients/layer_1/Wx_plus_b/add_grad/Sum_1" [label=Sum_1 fillcolor="#dbcba4" style=filled]
-						"train/gradients/layer_1/Wx_plus_b/add_grad/Reshape_1" [label=Reshape_1 fillcolor="#e8f5f6" style=filled]
-							"train/gradients/layer_1/Wx_plus_b/add_grad/BroadcastGradientArgs" -> "train/gradients/layer_1/Wx_plus_b/add_grad/Sum_1"
-							"train/gradients/layer_1/Wx_plus_b/add_grad/Sum" -> "train/gradients/layer_1/Wx_plus_b/add_grad/Reshape"
-							"train/gradients/layer_1/Wx_plus_b/add_grad/Shape_1" -> "train/gradients/layer_1/Wx_plus_b/add_grad/BroadcastGradientArgs"
-							"train/gradients/layer_1/Wx_plus_b/add_grad/Shape" -> "train/gradients/layer_1/Wx_plus_b/add_grad/BroadcastGradientArgs"
-							"train/gradients/layer_1/Wx_plus_b/add_grad/Shape" -> "train/gradients/layer_1/Wx_plus_b/add_grad/Reshape"
-							"train/gradients/layer_1/Wx_plus_b/add_grad/BroadcastGradientArgs" -> "train/gradients/layer_1/Wx_plus_b/add_grad/Sum"
-							"train/gradients/layer_1/Wx_plus_b/add_grad/Reshape_1" -> "train/gradients/layer_1/Wx_plus_b/add_grad/tuple/control_dependency_1"
-							"train/gradients/layer_1/Wx_plus_b/add_grad/Shape_1" -> "train/gradients/layer_1/Wx_plus_b/add_grad/Reshape_1"
-							"train/gradients/layer_1/Wx_plus_b/add_grad/Reshape" -> "train/gradients/layer_1/Wx_plus_b/add_grad/tuple/control_dependency"
-							"train/gradients/layer_1/Wx_plus_b/add_grad/Sum_1" -> "train/gradients/layer_1/Wx_plus_b/add_grad/Reshape_1"
-					}
-					// subgraph: train/gradients/layer_1/Wx_plus_b/MatMul_grad
-					subgraph "cluster_train/gradients/layer_1/Wx_plus_b/MatMul_grad" {
-					label="train/gradients/layer_1/Wx_plus_b/MatMul_grad"
-						// subgraph: train/gradients/layer_1/Wx_plus_b/MatMul_grad/tuple
-						subgraph "cluster_train/gradients/layer_1/Wx_plus_b/MatMul_grad/tuple" {
-						label="train/gradients/layer_1/Wx_plus_b/MatMul_grad/tuple"
-							"train/gradients/layer_1/Wx_plus_b/MatMul_grad/tuple/group_deps" [label=group_deps fillcolor="#dbcbdc" style=filled]
-							"train/gradients/layer_1/Wx_plus_b/MatMul_grad/tuple/control_dependency" [label=control_dependency fillcolor="#c9bed4" style=filled]
-							"train/gradients/layer_1/Wx_plus_b/MatMul_grad/tuple/control_dependency_1" [label=control_dependency_1 fillcolor="#c9bed4" style=filled]
-						}
-						"train/gradients/layer_1/Wx_plus_b/MatMul_grad/MatMul" [label=MatMul fillcolor="#bbffbb" style=filled]
-						"train/gradients/layer_1/Wx_plus_b/MatMul_grad/MatMul_1" [label=MatMul_1 fillcolor="#bbffbb" style=filled]
-							"train/gradients/layer_1/Wx_plus_b/MatMul_grad/MatMul" -> "train/gradients/layer_1/Wx_plus_b/MatMul_grad/tuple/control_dependency"
-							"train/gradients/layer_1/Wx_plus_b/MatMul_grad/MatMul_1" -> "train/gradients/layer_1/Wx_plus_b/MatMul_grad/tuple/control_dependency_1"
-					}
-						"train/gradients/layer_1/Wx_plus_b/add_grad/tuple/control_dependency" -> "train/gradients/layer_1/Wx_plus_b/MatMul_grad/MatMul"
-						"train/gradients/layer_1/Wx_plus_b/add_grad/tuple/control_dependency" -> "train/gradients/layer_1/Wx_plus_b/MatMul_grad/MatMul_1"
-				}
-			}
-			"train/gradients/Shape" [label=Shape fillcolor=yellow style=filled]
-			"train/gradients/Const" [label=Const fillcolor=yellow style=filled]
-			"train/gradients/Fill" [label=Fill fillcolor="#fca2b3" style=filled]
-				"train/gradients/layer_1/Wx_plus_b/MatMul_grad/tuple/control_dependency" -> "train/gradients/Relu_grad/ReluGrad"
-				"train/gradients/Fill" -> "train/gradients/loss/Mean_grad/Reshape"
-				"train/gradients/loss/sub_grad/tuple/control_dependency_1" -> "train/gradients/layer_1/Wx_plus_b/add_grad/Sum_1"
-				"train/gradients/Relu_grad/ReluGrad" -> "train/gradients/layer/Wx_plus_b/add_grad/Sum"
-				"train/gradients/Shape" -> "train/gradients/Fill"
-				"train/gradients/loss/sub_grad/tuple/control_dependency_1" -> "train/gradients/layer_1/Wx_plus_b/add_grad/Sum"
-				"train/gradients/Relu_grad/ReluGrad" -> "train/gradients/layer/Wx_plus_b/add_grad/Sum_1"
-				"train/gradients/Const" -> "train/gradients/Fill"
-		}
-		"train/GradientDescent" [label=GradientDescent fillcolor="#dbcbdc" style=filled]
-			"train/gradients/layer/Wx_plus_b/MatMul_grad/tuple/control_dependency_1" -> "train/GradientDescent/update_layer/weights/W/ApplyGradientDescent"
-			"train/gradients/layer/Wx_plus_b/add_grad/tuple/control_dependency_1" -> "train/GradientDescent/update_layer/biases/b/ApplyGradientDescent"
-			"train/gradients/layer_1/Wx_plus_b/MatMul_grad/tuple/control_dependency_1" -> "train/GradientDescent/update_layer_1/weights/W/ApplyGradientDescent"
-			"train/gradients/layer_1/Wx_plus_b/add_grad/tuple/control_dependency_1" -> "train/GradientDescent/update_layer_1/biases/b/ApplyGradientDescent"
-	}
-	// subgraph: inputs
-	subgraph cluster_inputs {
-	label="inputs"
-		"inputs/x_input" [label=x_input fillcolor="#edaeb4" style=filled]
-		"inputs/y_input" [label=y_input fillcolor="#edaeb4" style=filled]
-	}
-	// subgraph: layer_1
-	subgraph cluster_layer_1 {
-	label="layer_1"
-		// subgraph: layer_1/weights
-		subgraph "cluster_layer_1/weights" {
-		label="layer_1/weights"
-			// subgraph: layer_1/weights/random_normal
-			subgraph "cluster_layer_1/weights/random_normal" {
-			label="layer_1/weights/random_normal"
-				"layer_1/weights/random_normal/shape" [label=shape fillcolor=yellow style=filled]
-				"layer_1/weights/random_normal/mean" [label=mean fillcolor=yellow style=filled]
-				"layer_1/weights/random_normal/stddev" [label=stddev fillcolor=yellow style=filled]
-				"layer_1/weights/random_normal/RandomStandardNormal" [label=RandomStandardNormal fillcolor="#a8c7a9" style=filled]
-				"layer_1/weights/random_normal/mul" [label=mul fillcolor="#d3dde7" style=filled]
-					"layer_1/weights/random_normal/RandomStandardNormal" -> "layer_1/weights/random_normal/mul"
-					"layer_1/weights/random_normal/shape" -> "layer_1/weights/random_normal/RandomStandardNormal"
-					"layer_1/weights/random_normal/stddev" -> "layer_1/weights/random_normal/mul"
-			}
-			// subgraph: layer_1/weights/W
-			subgraph "cluster_layer_1/weights/W" {
-			label="layer_1/weights/W"
-				"layer_1/weights/W/Assign" [label=Assign fillcolor="#bbbbff" style=filled]
-				"layer_1/weights/W/read" [label=read fillcolor="#c9bed4" style=filled]
-			}
-			"layer_1/weights/random_normal" [label=random_normal fillcolor="#b3ecd8" style=filled]
-			"layer_1/weights/W" [label=W fillcolor="#aec4e4" style=filled]
-				"layer_1/weights/random_normal" -> "layer_1/weights/W/Assign"
-				"layer_1/weights/random_normal/mul" -> "layer_1/weights/random_normal"
-				"layer_1/weights/random_normal/mean" -> "layer_1/weights/random_normal"
-				"layer_1/weights/W" -> "layer_1/weights/W/read"
-				"layer_1/weights/W/Assign" -> "layer_1/weights/W" [color=red]
-		}
-		// subgraph: layer_1/biases
-		subgraph "cluster_layer_1/biases" {
-		label="layer_1/biases"
-			// subgraph: layer_1/biases/b
-			subgraph "cluster_layer_1/biases/b" {
-			label="layer_1/biases/b"
-				"layer_1/biases/b/Assign" [label=Assign fillcolor="#bbbbff" style=filled]
-				"layer_1/biases/b/read" [label=read fillcolor="#c9bed4" style=filled]
-			}
-			// subgraph: layer_1/biases/add
-			subgraph "cluster_layer_1/biases/add" {
-			label="layer_1/biases/add"
-				"layer_1/biases/add/y" [label=y fillcolor=yellow style=filled]
-			}
-			"layer_1/biases/zeros" [label=zeros fillcolor=yellow style=filled]
-			"layer_1/biases/add" [label=add fillcolor="#b3ecd8" style=filled]
-			"layer_1/biases/b" [label=b fillcolor="#aec4e4" style=filled]
-				"layer_1/biases/zeros" -> "layer_1/biases/add"
-				"layer_1/biases/add/y" -> "layer_1/biases/add"
-				"layer_1/biases/b/Assign" -> "layer_1/biases/b" [color=red]
-				"layer_1/biases/add" -> "layer_1/biases/b/Assign"
-				"layer_1/biases/b" -> "layer_1/biases/b/read"
-		}
-		// subgraph: layer_1/Wx_plus_b
-		subgraph "cluster_layer_1/Wx_plus_b" {
-		label="layer_1/Wx_plus_b"
-			"layer_1/Wx_plus_b/MatMul" [label=MatMul fillcolor="#bbffbb" style=filled]
-			"layer_1/Wx_plus_b/add" [label=add fillcolor="#b3ecd8" style=filled]
-				"layer_1/Wx_plus_b/MatMul" -> "layer_1/Wx_plus_b/add"
-		}
-			"layer_1/weights/W/read" -> "layer_1/Wx_plus_b/MatMul"
-			"layer_1/biases/b/read" -> "layer_1/Wx_plus_b/add"
-	}
-	// subgraph: loss
-	subgraph cluster_loss {
-	label="loss"
-		// subgraph: loss/Sum
-		subgraph "cluster_loss/Sum" {
-		label="loss/Sum"
-			"loss/Sum/reduction_indices" [label=reduction_indices fillcolor=yellow style=filled]
-		}
-		"loss/sub" [label=sub fillcolor="#cdc99e" style=filled]
-		"loss/Square" [label=Square fillcolor="#aea7fd" style=filled]
-		"loss/Sum" [label=Sum fillcolor="#dbcba4" style=filled]
-		"loss/Const" [label=Const fillcolor=yellow style=filled]
-		"loss/Mean" [label=Mean fillcolor="#fcb1aa" style=filled]
-			"loss/sub" -> "loss/Square"
-			"loss/Sum" -> "loss/Mean"
-			"loss/Square" -> "loss/Sum"
-			"loss/Const" -> "loss/Mean"
-			"loss/Sum/reduction_indices" -> "loss/Sum"
-	}
-	x_input [label=x_input fillcolor="#edaeb4" style=filled]
-	y_input [label=y_input fillcolor="#edaeb4" style=filled]
-	Relu [label=Relu fillcolor="#b5b6bf" style=filled]
-	init [label=init fillcolor="#dbcbdc" style=filled]
-		Relu -> "train/gradients/layer_1/Wx_plus_b/MatMul_grad/MatMul_1"
-		"layer_1/weights/W/read" -> "train/gradients/layer_1/Wx_plus_b/MatMul_grad/MatMul"
-		"inputs/y_input" -> "train/gradients/loss/sub_grad/Shape"
-		"layer/Wx_plus_b/add" -> Relu
-		"layer_1/Wx_plus_b/MatMul" -> "train/gradients/layer_1/Wx_plus_b/add_grad/Shape"
-		"layer/Wx_plus_b/MatMul" -> "train/gradients/layer/Wx_plus_b/add_grad/Shape"
-		Relu -> "layer_1/Wx_plus_b/MatMul"
-		"layer/weights/W/read" -> "train/gradients/layer/Wx_plus_b/MatMul_grad/MatMul"
-		"loss/sub" -> "train/gradients/loss/Square_grad/mul"
-		"inputs/x_input" -> "train/gradients/layer/Wx_plus_b/MatMul_grad/MatMul_1"
-		"layer_1/biases/b" -> "train/GradientDescent/update_layer_1/biases/b/ApplyGradientDescent"
-		"loss/Sum" -> "train/gradients/loss/Mean_grad/Shape"
-		"loss/Sum/reduction_indices" -> "train/gradients/loss/Sum_grad/add"
-		"layer_1/weights/W" -> "train/GradientDescent/update_layer_1/weights/W/ApplyGradientDescent"
-		"layer_1/Wx_plus_b/add" -> "train/gradients/loss/sub_grad/Shape_1"
-		Relu -> "train/gradients/Relu_grad/ReluGrad"
-		"inputs/y_input" -> "loss/sub"
-		"inputs/x_input" -> "layer/Wx_plus_b/MatMul"
-		"layer_1/Wx_plus_b/add" -> "loss/sub"
-		"layer/biases/b" -> "train/GradientDescent/update_layer/biases/b/ApplyGradientDescent"
-		"loss/Square" -> "train/gradients/loss/Sum_grad/Shape"
-		"layer/weights/W" -> "train/GradientDescent/update_layer/weights/W/ApplyGradientDescent"
-		"loss/Sum" -> "train/gradients/loss/Mean_grad/Shape_1"
-}
-</pre>
-</div>
 </div>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [11]:</div>
+<div class="prompt input_prompt">In [30]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tfdot</span><span class="p">()</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
@@ -2313,21 +2019,10 @@ label=""
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="prompt output_prompt">Out[11]:</div>
+<div class="prompt output_prompt">Out[30]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>'root.gv.pdf'</pre>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
 </div>
 </div>
 </div>
