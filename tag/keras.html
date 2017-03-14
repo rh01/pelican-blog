@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Authors - Data</title>
+    <title>Keras - Data</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,7 +10,8 @@
 
 
 
-        <meta name="author" content="ShenHengheng" />
+    <meta name="author" content="ShenHengheng" />
+    <meta name="keywords" content="Keras" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="Data" />
@@ -63,9 +64,27 @@ Data            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-    <h1>Authors on Data</h1>
-        <li><a href="http://data.shenhengheng.xyz/author/shenheng.html">ShenHeng</a> (4)</li>
-        <li><a href="http://data.shenhengheng.xyz/author/shenhengheng.html">Shenhengheng</a> (3)</li>
+            <article>
+                <h2><a href="http://data.shenhengheng.xyz/Keras.html">Keras 教程-01</a></h2>
+                <div class="summary">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="数据预处理">数据预处理<a class="anchor-link" href="#数据预处理">¶</a></h2><p>Keras 自身就有 MNIST 这个数据包，再分成训练集和测试集。<code>x</code> 是一张张图片，<code>y</code> 是每张图片对应的标签，即它是哪个数字。</p>
+<p>输入的 <code>x</code> 变成 <code>60,000*784</code> 的数据，然后除以 <code>255</code> 进行标准化，因为每个像素都是在 <code>0</code> 到 <code>255</code> 之间的，标准化之后就变成了 <code>0</code> 到 <code>1</code> 之间。</p>
+<p>对于 y，要用到 Keras 改造的 numpy 的一个函数 <code>np_utils.to_categorical</code>，把 <code>y</code> 变成了 <code>one-hot</code> 的形式，即之前 <code>y</code> 是一个数值， 在 <code>0-9</code> 之间，现在是一个大小为 <code>10</code> 的向量，它属于哪个数字，就在哪个位置为 <code>1</code>，其他位置都是 <code>0</code>。</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+                    <a class="btn btn-default btn-xs" href="http://data.shenhengheng.xyz/Keras.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>

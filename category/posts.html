@@ -65,6 +65,75 @@ Data            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="http://data.shenhengheng.xyz/Keras.html">Keras 教程-01</a></h2>
+                <div class="summary">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="数据预处理">数据预处理<a class="anchor-link" href="#数据预处理">¶</a></h2><p>Keras 自身就有 MNIST 这个数据包，再分成训练集和测试集。<code>x</code> 是一张张图片，<code>y</code> 是每张图片对应的标签，即它是哪个数字。</p>
+<p>输入的 <code>x</code> 变成 <code>60,000*784</code> 的数据，然后除以 <code>255</code> 进行标准化，因为每个像素都是在 <code>0</code> 到 <code>255</code> 之间的，标准化之后就变成了 <code>0</code> 到 <code>1</code> 之间。</p>
+<p>对于 y，要用到 Keras 改造的 numpy 的一个函数 <code>np_utils.to_categorical</code>，把 <code>y</code> 变成了 <code>one-hot</code> 的形式，即之前 <code>y</code> 是一个数值， 在 <code>0-9</code> 之间，现在是一个大小为 <code>10</code> 的向量，它属于哪个数字，就在哪个位置为 <code>1</code>，其他位置都是 <code>0</code>。</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+                    <a class="btn btn-default btn-xs" href="http://data.shenhengheng.xyz/Keras.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://data.shenhengheng.xyz/peclican.html">pelican 小贴士</a></h2>
+                <div class="summary">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="小贴士">小贴士<a class="anchor-link" href="#小贴士">¶</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>以下内容为一些有用的小贴士。</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="发布到GitHub">发布到GitHub<a class="anchor-link" href="#发布到GitHub">¶</a></h1><p><a href="https://help.github.com/categories/20/articles">GitHub Pages</a> 提供一种简洁高效的发布Pelican页面的方法， There are <a href="https://help.github.com/articles/user-organization-and-project-pages">two types of GitHub
+Pages</a> : <em>Project Pages</em> and <em>User Pages</em>. 两者都支持Pelican页面发布。</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Project-Pages">Project Pages<a class="anchor-link" href="#Project-Pages">¶</a></h2><p>首先需要 <em>push</em> <code>output</code> 目录中由Pelican生成的文件到Github仓库 <code>gh-pages</code> 。（你需要了解一些关于github的使用方法——译者注）</p>
+<p>ghp-import命令可以简化该过程  <a href="https://github.com/davisp/ghp-import">ghp-import</a>, 通过 <code>easy_install</code> or <code>pip</code> 安装。</p>
+<p>例如，如果站点源目录包含在Github仓库中，并且以Project
+Pages形式发布页面，可以按照如下步骤操作::</p>
+<div class="highlight"><pre><span></span>$ pelican content -o output -s pelicanconf.py
+    $ ghp-import output
+    $ git push origin gh-pages
+</pre></div>
+<p>通过 <code>ghp-import output</code>
+                    <a class="btn btn-default btn-xs" href="http://data.shenhengheng.xyz/peclican.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="http://data.shenhengheng.xyz/mnist.html">Classification</a></h2>
                 <div class="summary">
 <div class="cell border-box-sizing code_cell rendered">

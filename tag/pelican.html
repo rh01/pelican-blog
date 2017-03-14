@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Authors - Data</title>
+    <title>pelican - Data</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,7 +10,8 @@
 
 
 
-        <meta name="author" content="ShenHengheng" />
+    <meta name="author" content="ShenHengheng" />
+    <meta name="keywords" content="pelican" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="Data" />
@@ -63,9 +64,56 @@ Data            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-    <h1>Authors on Data</h1>
-        <li><a href="http://data.shenhengheng.xyz/author/shenheng.html">ShenHeng</a> (4)</li>
-        <li><a href="http://data.shenhengheng.xyz/author/shenhengheng.html">Shenhengheng</a> (3)</li>
+            <article>
+                <h2><a href="http://data.shenhengheng.xyz/peclican.html">pelican 小贴士</a></h2>
+                <div class="summary">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="小贴士">小贴士<a class="anchor-link" href="#小贴士">¶</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>以下内容为一些有用的小贴士。</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="发布到GitHub">发布到GitHub<a class="anchor-link" href="#发布到GitHub">¶</a></h1><p><a href="https://help.github.com/categories/20/articles">GitHub Pages</a> 提供一种简洁高效的发布Pelican页面的方法， There are <a href="https://help.github.com/articles/user-organization-and-project-pages">two types of GitHub
+Pages</a> : <em>Project Pages</em> and <em>User Pages</em>. 两者都支持Pelican页面发布。</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Project-Pages">Project Pages<a class="anchor-link" href="#Project-Pages">¶</a></h2><p>首先需要 <em>push</em> <code>output</code> 目录中由Pelican生成的文件到Github仓库 <code>gh-pages</code> 。（你需要了解一些关于github的使用方法——译者注）</p>
+<p>ghp-import命令可以简化该过程  <a href="https://github.com/davisp/ghp-import">ghp-import</a>, 通过 <code>easy_install</code> or <code>pip</code> 安装。</p>
+<p>例如，如果站点源目录包含在Github仓库中，并且以Project
+Pages形式发布页面，可以按照如下步骤操作::</p>
+<div class="highlight"><pre><span></span>$ pelican content -o output -s pelicanconf.py
+    $ ghp-import output
+    $ git push origin gh-pages
+</pre></div>
+<p>通过 <code>ghp-import output</code>
+                    <a class="btn btn-default btn-xs" href="http://data.shenhengheng.xyz/peclican.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
