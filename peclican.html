@@ -1115,8 +1115,8 @@ Pages</a> : <em>Project Pages</em> and <em>User Pages</em>. 两者都支持Pelic
 <p>例如，如果站点源目录包含在Github仓库中，并且以Project
 Pages形式发布页面，可以按照如下步骤操作::</p>
 <div class="highlight"><pre><span></span>$ pelican content -o output -s pelicanconf.py
-    $ ghp-import output
-    $ git push origin gh-pages
+$ ghp-import output
+$ git push origin gh-pages
 </pre></div>
 <p>通过 <code>ghp-import output</code> 命令对本地 <code>gh-pages</code> 分支 <code>output</code> 目录中的内容进行更新（如果分支不存在，直接创建即可）。 <code>git push origin gh-pages</code> 命令主要功能则是更新并发布远程（Github仓库） <code>gh-pages</code> 分支页面内容。</p>
 <p>Note</p>
@@ -1132,8 +1132,8 @@ Pages形式发布页面，可以按照如下步骤操作::</p>
 <h2 id="User-Pages">User Pages<a class="anchor-link" href="#User-Pages">¶</a></h2><p>首先需要 <em>push</em> <code>output</code> 目录中由Pelican生成的文件到Github仓库 <code>master</code> 分支仓库，形如 <code><username>.github.io</code> （其中username为你注册github填写的用户名——译者注）。</p>
 <p>其次，使用 <code>ghp-import</code>::</p>
 <div class="highlight"><pre><span></span>$ pelican content -o output -s pelicanconf.py
-    $ ghp-import output
-    $ git push git@github.com:elemoine/elemoine.github.io.git gh-pages:master
+$ ghp-import output
+$ git push git@github.com:elemoine/elemoine.github.io.git gh-pages:master
 </pre></div>
 <p>通过 <code>git push</code> 更新Github远程仓库内容。</p>
 <p>Note</p>
@@ -1154,7 +1154,7 @@ Pages形式发布页面，可以按照如下步骤操作::</p>
 <p>To use a <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">custom domain</a>  with GitHub Pages, you need to put the domain of your site (e.g.,<code>blog.example.com</code> ) inside a  <code>CNAME</code>  file at the root of your site. To do this, create the <code>content/extra/</code> directory and add a <code>CNAME</code> file to it.</p>
 <p>Then use the <code>STATIC_PATHS</code> setting to tell Pelican to copy this file to your output directory. For example::</p>
 <div class="highlight"><pre><span></span><span class="nv">STATIC_PATHS</span> <span class="o">=</span> <span class="o">[</span><span class="s1">'images'</span>, <span class="s1">'extra/CNAME'</span><span class="o">]</span>
-    <span class="nv">EXTRA_PATH_METADATA</span> <span class="o">=</span> <span class="o">{</span><span class="s1">'extra/CNAME'</span>: <span class="o">{</span><span class="s1">'path'</span>: <span class="s1">'CNAME'</span><span class="o">}</span>,<span class="o">}</span>
+<span class="nv">EXTRA_PATH_METADATA</span> <span class="o">=</span> <span class="o">{</span><span class="s1">'extra/CNAME'</span>: <span class="o">{</span><span class="s1">'path'</span>: <span class="s1">'CNAME'</span><span class="o">}</span>,<span class="o">}</span>
 </pre></div>
 </div>
 </div>
